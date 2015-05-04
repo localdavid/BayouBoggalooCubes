@@ -1,0 +1,189 @@
+// Mixins
+
+@mixin column {
+	height: 600px;
+//     line-height: $body-line-height;
+    background: $column-color;
+    
+/*
+	@include media($small-media) {
+		@include span-columns(12);
+	}
+*/
+	
+// 	@include media($large-media) {
+		@include span-columns(3);
+// 	}
+}
+
+@mixin column_last{
+	@include column;
+	@include omega();
+}
+
+@mixin band_box_template {
+	height: 100px;
+	width: 100%;
+	display: table;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+
+section {
+		
+	&#cubes {
+		
+			section.cubes_row {
+				@include outer-container;
+				border: 5px;
+				padding-bottom: 70px;
+			}
+		}
+		
+
+						
+		.cubes_left {
+			@include column;
+		}
+		
+		.cubes_two  {
+			@include column;
+		}
+
+		.cubes_right {
+			@include column;
+		}
+		
+		.cubes_4 {
+			@include column_last;
+		}
+	
+		.cubes_5 {
+			@include column;
+		}
+
+		.cubes_6 {
+			@include column;
+		}
+		
+		.cubes_7 {
+			@include column;
+		}
+	
+		.cubes_8 {
+			@include column_last;
+		}
+
+		.cubes_9 {
+			@include column;
+		}		
+		
+		.cubes_10 {
+			@include column;
+		}
+		
+		.cubes_11 {
+			@include column;
+		}	
+		
+		.cubes_12 {
+			@include column_last;
+		}						
+				
+		.band_box {
+			@include band_box_template;
+			@include linear-gradient($primary-color, $primary-color-darken );
+			& a {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 200; 
+				text-decoration: none;
+			}
+		}
+		
+		
+		.band_box_basin_pick {
+			@include band_box_template;
+			background-image: url(/img/CountBasin.svg), -webkit-gradient(linear, left top, left bottom, from($green-color), to($green-color-darken));
+			background-repeat: no-repeat, repeat;
+			background-position: 95% 10%, 0 0;
+			background-size: 50px, auto;
+		}		
+		
+		.band_box_performer_pick {
+			@include band_box_template;
+			@include linear-gradient($purple-color, $purple-color-darken );
+		}		
+			
+		.text {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		h3 {
+			font-size: 1.1em;
+			text-align: center;
+			line-height: .5em;
+			font-family: $secondary-font;
+			font-weight: 700;
+		}
+		
+		h1 {
+			font-size: 2em;
+			// 				text-align: center;
+			line-height: 1em;
+			font-family: $primary-font;
+		}
+
+}
+
+
+
+
+
+
+	
+.full_cube {
+	display: none;
+}
+
+	
+
+
+
+
+.band_name_box {
+	float: left;
+	width: 80%;
+	background: gray;
+}
+
+.icon_box {
+	float: right;
+	width: 20%;
+	height: 90%;
+}
+
+.g_box {
+	content: url(/img/G.svg);
+}
+
+.pick_box{
+	content: url(/img/check.svg);
+	width: 100%;
+}
+
+
+// Stage Name
+
+h1.stage_name{
+	font-family: $secondary-font;
+	font: 400;
+	color: $primary-color-darken;
+	text-align: center;
+}

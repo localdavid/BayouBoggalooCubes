@@ -1,0 +1,39 @@
+$primary-color: #7BCAE8;
+$primary-color-darken: darken($primary-color, 10%);
+$primary-color-darken2: darken($primary-color, 25%);
+
+$primary-color-lighten: lighten($primary-color, 15%);
+$secondary-color: #93ffd5;
+$secondary-color-lighten: lighten($secondary-color, 15%);
+
+$green-color: #adffc4;
+$green-color-darken: darken($green-color, 10%);
+$green-color-darken2: darken($green-color, 30%);
+
+$purple-color: #ce5be4;
+$purple-color-darken: darken($purple-color, 10%);
+$purple-color-darken2: darken($purple-color, 30%);
+
+$column-color: #c6fdff;
+
+
+
+$body-line-height: 5em;
+
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700);
+
+
+
+// Font Variables
+$primary-font: 'Oswald', sans-serif;
+$secondary-font: 'Arvo', serif;
+
+
+// Breakpoints
+
+/*
+$small-media: new-breakpoint(max-width 600px);
+$large-media: new-breakpoint(min-width 601px);
+*/
