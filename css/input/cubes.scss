@@ -4,6 +4,8 @@
 	height: 600px;
 //     line-height: $body-line-height;
     background: $column-color;
+	@include span-columns(4);
+
     
 /*
 	@include media($small-media) {
@@ -12,7 +14,6 @@
 */
 	
 // 	@include media($large-media) {
-		@include span-columns(3);
 // 	}
 }
 
@@ -53,44 +54,9 @@ section {
 		}
 
 		.cubes_right {
-			@include column;
-		}
-		
-		.cubes_4 {
 			@include column_last;
+			@include omega;
 		}
-	
-		.cubes_5 {
-			@include column;
-		}
-
-		.cubes_6 {
-			@include column;
-		}
-		
-		.cubes_7 {
-			@include column;
-		}
-	
-		.cubes_8 {
-			@include column_last;
-		}
-
-		.cubes_9 {
-			@include column;
-		}		
-		
-		.cubes_10 {
-			@include column;
-		}
-		
-		.cubes_11 {
-			@include column;
-		}	
-		
-		.cubes_12 {
-			@include column_last;
-		}						
 				
 		.band_box {
 			@include band_box_template;
