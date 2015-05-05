@@ -48,11 +48,19 @@ section {
 			@include column;
 		}
 		
-		.cubes_two  {
+		.cubes_Sat_1 {
+			@include column;
+		}
+		
+		.cubes_Sat_2 {
+			@include column;
+		}
+		
+		.cubes_Sat_3 {
 			@include column;
 		}
 
-		.cubes_right {
+		.cubes_Sat_4 {
 			@include column_last;
 			@include omega;
 		}
