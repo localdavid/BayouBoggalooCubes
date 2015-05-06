@@ -114,6 +114,7 @@ $(document).ready(function() {
 
 
 // Sticky navigation
+/*
 
 	// 	Store the nav section as a variable, since we're calling it a lot
 	var nav = $("section.navigation");
@@ -129,3 +130,4 @@ $(document).ready(function() {
 			nav.removeClass("navigation_scrolled");
 		}
 	});
+*/

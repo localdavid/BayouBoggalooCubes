@@ -1,6 +1,6 @@
 // Mixins
 
-@mixin column {
+@mixin column-3 {
 	height: 600px;
     background: $column-color;
 
@@ -11,9 +11,19 @@
 	@include media($small-media) {
 		@include span-columns(12);
 	}
+}
 
-	
+@mixin column-4 {
+	height: 600px;
+    background: $column-color;
 
+	@include media($large-media) {
+		@include span-columns(3);
+	}
+    
+	@include media($small-media) {
+		@include span-columns(12);
+	}
 }
 
 @mixin column_last{
@@ -44,26 +54,25 @@ section {
 		
 
 						
-		.cubes_left {
-			@include column;
-		}
-		
-		.cubes_Sat_1 {
-			@include column;
-		}
-		
-		.cubes_Sat_2 {
-			@include column;
-		}
-		
-		.cubes_Sat_3 {
-			@include column;
+		.cubes_Fri {
+			@include column-3;
 		}
 
-		.cubes_Sat_4 {
-			@include column_last;
+		.cubes_Fri_last {
+			@include column-3;
 			@include omega;
-		}
+		}		
+		
+		.cubes_Sat {
+			@include column-4;
+		}	
+		
+		.cubes_Sat_last {
+			@include column-4;
+			@include omega;
+		}		
+	
+
 				
 		.band_box {
 			@include band_box_template;
