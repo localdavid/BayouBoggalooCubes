@@ -121,7 +121,7 @@ $(document).ready(function() {
 	// 	 On scroll, target browser window and pass function
 	$(window).scroll(function() {
 		// 	this = window; scrollTop gets current vertical position of scroll bar; # is how many pixels are scrolled	
-		if ( $(this).scrollTop() > 180 ) {
+		if ( $(this).scrollTop() > 200 ) {
 			// 	add scrolled class		
 			nav.addClass("navigation_scrolled");
 		}
