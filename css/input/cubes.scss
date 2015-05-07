@@ -27,7 +27,12 @@
 }
 
 @mixin column_last{
-	@include column;
+	@include column-3;
+	@include omega();
+}
+
+@mixin column_last-4{
+	@include column-4;
 	@include omega();
 }
 
@@ -69,7 +74,7 @@ section {
 		
 		.cubes_Sat_last {
 			@include column-4;
-			@include omega;
+// 			@include omega;
 		}		
 	
 
