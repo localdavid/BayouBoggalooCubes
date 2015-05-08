@@ -49,6 +49,7 @@
 section {
 		
 	&#cubes {
+		background-color: white;
 		
 			section.cubes_row {
 				@include outer-container;
@@ -125,6 +126,9 @@ section {
 			// 				text-align: center;
 			line-height: 1em;
 			font-family: $primary-font;
+			&.small{
+				font-size: 1em;
+			}
 		}
 
 }

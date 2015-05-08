@@ -23,16 +23,18 @@ h1.headline {
 body {
   background-color: white; }
 
-section#cubes section.cubes_row {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px;
-  padding-bottom: 70px; }
-  section#cubes section.cubes_row::after {
-    clear: both;
-    content: "";
-    display: table; }
+section#cubes {
+  background-color: white; }
+  section#cubes section.cubes_row {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px;
+    padding-bottom: 70px; }
+    section#cubes section.cubes_row::after {
+      clear: both;
+      content: "";
+      display: table; }
 section .cubes_Fri {
   height: 600px;
   background: #c6fdff; }
@@ -159,6 +161,8 @@ section h1 {
   font-size: 2em;
   line-height: 1em;
   font-family: "Oswald", sans-serif; }
+  section h1.small {
+    font-size: 1em; }
 
 .full_cube {
   display: none; }
