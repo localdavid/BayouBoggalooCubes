@@ -1,28 +1,31 @@
 // Mixins
 
 @mixin column-3 {
-	height: 600px;
+
     background: $column-color;
 
 	@include media($large-media) {
 		@include span-columns(4);
+		height: 800px;
 	}
     
 	@include media($small-media) {
 		@include span-columns(12);
+		height: 100%;			
 	}
 }
 
 @mixin column-4 {
-	height: 600px;
     background: $column-color;
 
 	@include media($large-media) {
 		@include span-columns(3);
+		height: 910px;		
 	}
     
 	@include media($small-media) {
 		@include span-columns(12);
+		height: 100%;			
 	}
 }
 
@@ -75,10 +78,8 @@ section {
 		
 		.cubes_Sat_last {
 			@include column-4;
-// 			@include omega;
 		}		
 	
-
 				
 		.band_box {
 			@include band_box_template;
@@ -93,7 +94,6 @@ section {
 				text-decoration: none;
 			}
 		}
-		
 		
 		.band_box_basin_pick {
 			@include band_box_template;
@@ -126,12 +126,35 @@ section {
 			// 				text-align: center;
 			line-height: 1em;
 			font-family: $primary-font;
-			&.small{
+			& .small{
 				font-size: 1em;
 			}
+				
+			}
 		}
+		.band_box_kids {
+			@include band_box_template;
+			@include linear-gradient($primary-color, $primary-color-darken );
+			height: 70px;
+			& a {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 200; 
+				text-decoration: none;
+				
+			& h1 {
+				font-size: 2em;
+				// 				text-align: center;
+				line-height: 1em;
+				font-family: $primary-font;
+				}
+			}
+		}
+	
 
-}
 
 
 
@@ -178,3 +201,24 @@ h1.stage_name{
 	color: $primary-color-darken;
 	text-align: center;
 }
+
+h2{
+	// 				text-align: center;
+	line-height: 1.3em;
+	font-family: $primary-font;
+	font-size: 1.1em;
+		@include media($large-media) {
+		font-size: 1.1em;
+	}
+    
+	@include media($small-media) {
+		@include span-columns(12);
+		height: 100%;
+		font-size: 2em;
+			
+	}
+}
+
+	
+
+
