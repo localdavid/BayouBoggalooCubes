@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700|Cherry+Swash:700);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700|Vast+Shadow);
 /* line 4, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
@@ -17,12 +17,16 @@ header {
   position: fixed;
   top: 0;
   z-index: -1;
+  /*
+  	background-image: url(img/crop_waves-01.svg);
+  	background-size: 800px 200px;
+  */
   vertical-align: middle; }
-  /* line 12, input/header.scss */
+  /* line 16, input/header.scss */
   header h1 {
     margin-top: 30px;
     text-align: center;
-    font-family: "Cherry Swash", cursive;
+    font-family: "Vast Shadow", cursive;
     font-size: 3em;
     color: #c16c0a; }
 
