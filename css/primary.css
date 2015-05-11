@@ -168,11 +168,26 @@ section#cubes {
       clear: both;
       content: "";
       display: table; }
-/* line 66, input/cubes.scss */
+/* line 64, input/cubes.scss */
+section .active_cubes_date {
+  height: 60px;
+  width: 100%;
+  background-color: #e8f1f4;
+  background-image: -webkit-linear-gradient(#e8f1f4, white);
+  background-image: linear-gradient(#e8f1f4, white);
+  display: table; }
+  /* line 71, input/cubes.scss */
+  section .active_cubes_date h1 {
+    font-family: "Arvo", serif;
+    font-size: 2em;
+    color: #858c97;
+    vertical-align: middle;
+    text-align: center; }
+/* line 81, input/cubes.scss */
 section .cubes_Fri {
   background: #c6fdff; }
   @media screen and (min-width: 601px) {
-    /* line 66, input/cubes.scss */
+    /* line 81, input/cubes.scss */
     section .cubes_Fri {
       float: left;
       display: block;
@@ -183,7 +198,7 @@ section .cubes_Fri {
       section .cubes_Fri:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 600px) {
-    /* line 66, input/cubes.scss */
+    /* line 81, input/cubes.scss */
     section .cubes_Fri {
       float: left;
       display: block;
@@ -193,12 +208,12 @@ section .cubes_Fri {
       /* line 89, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_span-columns.scss */
       section .cubes_Fri:last-child {
         margin-right: 0; } }
-/* line 70, input/cubes.scss */
+/* line 85, input/cubes.scss */
 section .cubes_Fri_last {
   background: #c6fdff;
   margin-right: 0; }
   @media screen and (min-width: 601px) {
-    /* line 70, input/cubes.scss */
+    /* line 85, input/cubes.scss */
     section .cubes_Fri_last {
       float: left;
       display: block;
@@ -209,7 +224,7 @@ section .cubes_Fri_last {
       section .cubes_Fri_last:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 600px) {
-    /* line 70, input/cubes.scss */
+    /* line 85, input/cubes.scss */
     section .cubes_Fri_last {
       float: left;
       display: block;
@@ -219,11 +234,11 @@ section .cubes_Fri_last {
       /* line 89, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_span-columns.scss */
       section .cubes_Fri_last:last-child {
         margin-right: 0; } }
-/* line 75, input/cubes.scss */
+/* line 90, input/cubes.scss */
 section .cubes_Sat {
   background: #c6fdff; }
   @media screen and (min-width: 601px) {
-    /* line 75, input/cubes.scss */
+    /* line 90, input/cubes.scss */
     section .cubes_Sat {
       float: left;
       display: block;
@@ -234,7 +249,7 @@ section .cubes_Sat {
       section .cubes_Sat:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 600px) {
-    /* line 75, input/cubes.scss */
+    /* line 90, input/cubes.scss */
     section .cubes_Sat {
       float: left;
       display: block;
@@ -244,11 +259,11 @@ section .cubes_Sat {
       /* line 89, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_span-columns.scss */
       section .cubes_Sat:last-child {
         margin-right: 0; } }
-/* line 79, input/cubes.scss */
+/* line 94, input/cubes.scss */
 section .cubes_Sat_last {
   background: #c6fdff; }
   @media screen and (min-width: 601px) {
-    /* line 79, input/cubes.scss */
+    /* line 94, input/cubes.scss */
     section .cubes_Sat_last {
       float: left;
       display: block;
@@ -259,7 +274,7 @@ section .cubes_Sat_last {
       section .cubes_Sat_last:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 600px) {
-    /* line 79, input/cubes.scss */
+    /* line 94, input/cubes.scss */
     section .cubes_Sat_last {
       float: left;
       display: block;
@@ -269,7 +284,7 @@ section .cubes_Sat_last {
       /* line 89, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_span-columns.scss */
       section .cubes_Sat_last:last-child {
         margin-right: 0; } }
-/* line 84, input/cubes.scss */
+/* line 99, input/cubes.scss */
 section .band_box {
   height: 100px;
   width: 100%;
@@ -279,7 +294,7 @@ section .band_box {
   background-color: #7BCAE8;
   background-image: -webkit-linear-gradient(#7BCAE8, #50b9e0);
   background-image: linear-gradient(#7BCAE8, #50b9e0); }
-  /* line 87, input/cubes.scss */
+  /* line 102, input/cubes.scss */
   section .band_box a {
     position: absolute;
     width: 100%;
@@ -288,7 +303,7 @@ section .band_box {
     left: 0;
     z-index: 200;
     text-decoration: none; }
-/* line 98, input/cubes.scss */
+/* line 113, input/cubes.scss */
 section .band_box_basin_pick {
   height: 100px;
   width: 100%;
@@ -299,7 +314,7 @@ section .band_box_basin_pick {
   background-repeat: no-repeat, repeat;
   background-position: 95% 10%, 0 0;
   background-size: 50px, auto; }
-/* line 106, input/cubes.scss */
+/* line 121, input/cubes.scss */
 section .band_box_performer_pick {
   height: 100px;
   width: 100%;
@@ -309,27 +324,27 @@ section .band_box_performer_pick {
   background-color: #ce5be4;
   background-image: -webkit-linear-gradient(#ce5be4, #c12fdd);
   background-image: linear-gradient(#ce5be4, #c12fdd); }
-/* line 111, input/cubes.scss */
+/* line 126, input/cubes.scss */
 section .text {
   display: table-cell;
   vertical-align: middle; }
-/* line 116, input/cubes.scss */
+/* line 131, input/cubes.scss */
 section h3 {
   font-size: 1.1em;
   text-align: center;
   line-height: .5em;
   font-family: "Arvo", serif;
   font-weight: 700; }
-/* line 124, input/cubes.scss */
+/* line 139, input/cubes.scss */
 section h1 {
   font-size: 2em;
   line-height: 1em;
   font-family: "Oswald", sans-serif; }
-  /* line 129, input/cubes.scss */
+  /* line 144, input/cubes.scss */
   section h1 .small {
     font-size: 1em; }
 
-/* line 135, input/cubes.scss */
+/* line 150, input/cubes.scss */
 .band_box_kids {
   height: 100px;
   width: 100%;
@@ -340,7 +355,7 @@ section h1 {
   background-image: -webkit-linear-gradient(#7BCAE8, #50b9e0);
   background-image: linear-gradient(#7BCAE8, #50b9e0);
   height: 70px; }
-  /* line 139, input/cubes.scss */
+  /* line 154, input/cubes.scss */
   .band_box_kids a {
     position: absolute;
     width: 100%;
@@ -349,55 +364,55 @@ section h1 {
     left: 0;
     z-index: 200;
     text-decoration: none; }
-    /* line 148, input/cubes.scss */
+    /* line 163, input/cubes.scss */
     .band_box_kids a h1 {
       font-size: 2em;
       line-height: 1em;
       font-family: "Oswald", sans-serif; }
 
-/* line 165, input/cubes.scss */
+/* line 180, input/cubes.scss */
 .full_cube {
   display: none; }
 
-/* line 174, input/cubes.scss */
+/* line 189, input/cubes.scss */
 .band_name_box {
   float: left;
   width: 80%;
   background: gray; }
 
-/* line 180, input/cubes.scss */
+/* line 195, input/cubes.scss */
 .icon_box {
   float: right;
   width: 20%;
   height: 90%; }
 
-/* line 186, input/cubes.scss */
+/* line 201, input/cubes.scss */
 .g_box {
   content: url(/img/G.svg); }
 
-/* line 190, input/cubes.scss */
+/* line 205, input/cubes.scss */
 .pick_box {
   content: url(/img/check.svg);
   width: 100%; }
 
-/* line 198, input/cubes.scss */
+/* line 213, input/cubes.scss */
 h1.stage_name {
   font-family: "Arvo", serif;
   font: 400;
   color: #50b9e0;
   text-align: center; }
 
-/* line 205, input/cubes.scss */
+/* line 220, input/cubes.scss */
 h2 {
   line-height: 1.3em;
   font-family: "Oswald", sans-serif;
   font-size: 1.1em; }
   @media screen and (min-width: 601px) {
-    /* line 205, input/cubes.scss */
+    /* line 220, input/cubes.scss */
     h2 {
       font-size: 1.1em; } }
   @media screen and (max-width: 600px) {
-    /* line 205, input/cubes.scss */
+    /* line 220, input/cubes.scss */
     h2 {
       float: left;
       display: block;

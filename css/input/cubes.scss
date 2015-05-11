@@ -61,6 +61,21 @@ section {
 			}
 		}
 		
+		.active_cubes_date {
+			height:60px;
+			width: 100%;
+// 			@include span-columns(12);
+			@include linear-gradient($date-fade-color,white);
+			display: table;
+
+			h1{
+				font-family: $secondary-font;
+				font-size: 2em;
+				color: #858c97;
+				vertical-align: middle;
+				text-align: center;
+			}	
+		}
 
 						
 		.cubes_Fri {
