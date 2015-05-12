@@ -26,6 +26,19 @@ header {
 		height: 100px;
 			
 	}
+	img {
+		height: auto;		
+		@include media($large-media) {
+			max-width: 100px;
+		}
+		@include media($small-media) {
+			max-width: 100px;
+		}
+		@include media($wide-media) {
+			max-width: 130px;
+		}
+		
+	}
 /*
 	background-image: url("blue-abstract.jpg");
 // 	background-size: 800px 200px;
@@ -63,25 +76,28 @@ header {
 	}
 	
 	p {
-		font-size: 1.2em;
-		text-align: center;
-		line-height: 1em;
 		font-family: $secondary-font;
 		font-weight: 400;
 // 		text-transform: uppercase;
 		@include media($small-media) {
 			font-size: 1.2em;
-			line-height: 1em;
+			line-height: .8em;
 			position: relative;
 			bottom: 5px;								
 		}
+
+		@include media($large-media) {
+		font-size: 1.2em;
+		line-height: .8em;
+// 		position: relative;
+// 		bottom: 3px;								
+		}		
 		@include media($wide-media) {
 		font-size: 1.6em;
 		line-height: 1em;
 		position: relative;
-		bottom: 3px;								
-		}
-		
+		top: 3px;								
+		}		
 	}	
 }
 
