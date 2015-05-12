@@ -36,3 +36,4 @@ $headline-font: 'Alfa Slab One', cursive;
 // Breakpoints
 $small-media: new-breakpoint(max-width 600px);
 $large-media: new-breakpoint(min-width 601px);
+$wide-media:  new-breakpoint(min-width 950px);

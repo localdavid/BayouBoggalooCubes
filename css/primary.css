@@ -44,7 +44,7 @@ header {
       margin-top: 30px;
       text-align: center;
       font-family: "Alfa Slab One", cursive;
-      font-size: 4em;
+      font-size: 3em;
       color: white;
       letter-spacing: 2px;
       text-shadow: 3px 3px 1px #1a7496; } }
@@ -58,20 +58,31 @@ header {
       color: white;
       letter-spacing: 2px;
       text-shadow: 3px 3px 1px #1a7496; } }
-  /* line 58, input/header.scss */
+  @media screen and (min-width: 950px) {
+    /* line 36, input/header.scss */
+    header h1 {
+      font-size: 4em; } }
+  /* line 65, input/header.scss */
   header p {
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: center;
     line-height: 1em;
     font-family: "Arvo", serif;
     font-weight: 400; }
     @media screen and (max-width: 600px) {
-      /* line 58, input/header.scss */
+      /* line 65, input/header.scss */
       header p {
         font-size: 1.2em;
         line-height: 1em;
         position: relative;
         bottom: 5px; } }
+    @media screen and (min-width: 950px) {
+      /* line 65, input/header.scss */
+      header p {
+        font-size: 1.6em;
+        line-height: 1em;
+        position: relative;
+        bottom: 3px; } }
 
 /*
 }
