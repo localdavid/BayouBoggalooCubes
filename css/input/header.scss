@@ -1,9 +1,13 @@
 header {
+// 			background: $primary-color;
+			background-image: url("wave.svg");
+			background-size: 120% auto;
+			background-position-x: -20px;
+			background-repeat: repeat;
 
 	@include media($large-media) {
 		width: 100%;
 		text-align: center;
-		background: $primary-color;
 		padding-top: 0;
 		position: fixed;
 		top: 0;
@@ -15,7 +19,6 @@ header {
 	@include media($small-media) {
 		width: 100%;
 		text-align: center;
-		background: $primary-color;
 		padding-top: 0;
 		position: fixed;
 		top: 0;
