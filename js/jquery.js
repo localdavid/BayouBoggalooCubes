@@ -15,6 +15,22 @@ $(document).ready(function() {
 });
 
 
+// Hide description at small size
+
+$(window).resize(function() {
+
+  if ($(this).width() < 600) {
+
+    $('.desc').hide();
+
+  } else {
+
+    $('.desc').show();
+
+    }
+
+});
+
 
 // Weekend select drop down menu (from: http://www.webchief.co.uk/blog/simple-jquery-dropdown-menu/)
 

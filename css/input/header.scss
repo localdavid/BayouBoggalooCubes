@@ -56,14 +56,15 @@ header {
 	}
 	
 	p {
-		font-size: .6em;
+		font-size: 1.6em;
 		text-align: center;
-		line-height: .5em;
+		line-height: 1em;
 		font-family: $secondary-font;
-		font-weight: 700;
+		font-weight: 400;
 // 		text-transform: uppercase;
 		@include media($small-media) {
-			line-height: .2em;
+			font-size: 1.2em;
+			line-height: 1em;
 			position: relative;
 			bottom: 5px;					
 		}

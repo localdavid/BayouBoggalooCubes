@@ -60,15 +60,16 @@ header {
       text-shadow: 3px 3px 1px #1a7496; } }
   /* line 58, input/header.scss */
   header p {
-    font-size: .6em;
+    font-size: 1.6em;
     text-align: center;
-    line-height: .5em;
+    line-height: 1em;
     font-family: "Arvo", serif;
-    font-weight: 700; }
+    font-weight: 400; }
     @media screen and (max-width: 600px) {
       /* line 58, input/header.scss */
       header p {
-        line-height: .2em;
+        font-size: 1.2em;
+        line-height: 1em;
         position: relative;
         bottom: 5px; } }
 
