@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700|Vast+Shadow);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700|Alfa+Slab+One);
 /* line 4, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
@@ -9,7 +9,6 @@ html {
 
 /* line 1, input/header.scss */
 header {
-  height: 200px;
   width: 100%;
   text-align: center;
   background: #7BCAE8;
@@ -18,17 +17,45 @@ header {
   top: 0;
   z-index: -1;
   /*
-  	background-image: url(img/crop_waves-01.svg);
-  	background-size: 800px 200px;
+  	background-image: url("blue-abstract.jpg");
+  // 	background-size: 800px 200px;
   */
   vertical-align: middle; }
-  /* line 16, input/header.scss */
-  header h1 {
-    margin-top: 30px;
+  @media screen and (min-width: 601px) {
+    /* line 1, input/header.scss */
+    header {
+      height: 200px; } }
+  @media screen and (max-width: 600px) {
+    /* line 1, input/header.scss */
+    header {
+      height: 100px; } }
+  @media screen and (min-width: 601px) {
+    /* line 25, input/header.scss */
+    header h1 {
+      margin-top: 30px;
+      text-align: center;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 4em;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 1px #1a7496; } }
+  @media screen and (max-width: 600px) {
+    /* line 25, input/header.scss */
+    header h1 {
+      margin-top: 30px;
+      text-align: center;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 2em;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 1px #1a7496; } }
+  /* line 47, input/header.scss */
+  header p {
+    font-size: .6em;
     text-align: center;
-    font-family: "Vast Shadow", cursive;
-    font-size: 3em;
-    color: #c16c0a; }
+    line-height: .5em;
+    font-family: "Arvo", serif;
+    font-weight: 700; }
 
 /*
 }
@@ -328,11 +355,15 @@ section .band_box_basin_pick {
   display: table;
   vertical-align: middle;
   text-align: center;
-  background-image: url(/img/CountBasin.svg), -webkit-gradient(linear, left top, left bottom, from(#adffc4), to(#7aff9f));
-  background-repeat: no-repeat, repeat;
-  background-position: 95% 10%, 0 0;
-  background-size: 50px, auto; }
-/* line 121, input/cubes.scss */
+  background-color: #adffc4;
+  background-image: -webkit-linear-gradient(#adffc4, #7aff9f);
+  background-image: linear-gradient(#adffc4, #7aff9f);
+  /*
+  			background-repeat: no-repeat, repeat;
+  			background-position: 95% 10%, 0 0;
+  			background-size: 50px, auto;
+  */ }
+/* line 123, input/cubes.scss */
 section .band_box_performer_pick {
   height: 100px;
   width: 100%;
@@ -342,27 +373,29 @@ section .band_box_performer_pick {
   background-color: #ce5be4;
   background-image: -webkit-linear-gradient(#ce5be4, #c12fdd);
   background-image: linear-gradient(#ce5be4, #c12fdd); }
-/* line 126, input/cubes.scss */
+/* line 128, input/cubes.scss */
 section .text {
   display: table-cell;
   vertical-align: middle; }
-/* line 131, input/cubes.scss */
+/* line 133, input/cubes.scss */
 section h3 {
   font-size: 1.1em;
   text-align: center;
   line-height: .5em;
   font-family: "Arvo", serif;
   font-weight: 700; }
-/* line 139, input/cubes.scss */
+/* line 141, input/cubes.scss */
 section h1 {
   font-size: 2em;
-  line-height: 1em;
-  font-family: "Oswald", sans-serif; }
-  /* line 144, input/cubes.scss */
+  line-height: 1.1em;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  bottom: .2em; }
+  /* line 148, input/cubes.scss */
   section h1 .small {
     font-size: 1em; }
 
-/* line 150, input/cubes.scss */
+/* line 154, input/cubes.scss */
 .band_box_kids {
   height: 100px;
   width: 100%;
@@ -373,7 +406,7 @@ section h1 {
   background-image: -webkit-linear-gradient(#7BCAE8, #50b9e0);
   background-image: linear-gradient(#7BCAE8, #50b9e0);
   height: 70px; }
-  /* line 154, input/cubes.scss */
+  /* line 158, input/cubes.scss */
   .band_box_kids a {
     position: absolute;
     width: 100%;
@@ -382,55 +415,64 @@ section h1 {
     left: 0;
     z-index: 200;
     text-decoration: none; }
-    /* line 163, input/cubes.scss */
+    /* line 167, input/cubes.scss */
     .band_box_kids a h1 {
-      font-size: 2em;
+      font-size: 3em;
       line-height: 1em;
-      font-family: "Oswald", sans-serif; }
+      font-family: "Oswald", sans-serif;
+      position: relative;
+      bottom: .2em; }
+  /* line 176, input/cubes.scss */
+  .band_box_kids h3 {
+    line-height: .2em;
+    position: relative;
+    top: .2em; }
 
-/* line 180, input/cubes.scss */
+/* line 191, input/cubes.scss */
 .full_cube {
   display: none; }
 
-/* line 189, input/cubes.scss */
+/* line 200, input/cubes.scss */
 .band_name_box {
   float: left;
   width: 80%;
   background: gray; }
 
-/* line 195, input/cubes.scss */
+/* line 206, input/cubes.scss */
 .icon_box {
   float: right;
   width: 20%;
   height: 90%; }
 
-/* line 201, input/cubes.scss */
+/* line 212, input/cubes.scss */
 .g_box {
   content: url(/img/G.svg); }
 
-/* line 205, input/cubes.scss */
+/* line 216, input/cubes.scss */
 .pick_box {
   content: url(/img/check.svg);
   width: 100%; }
 
-/* line 213, input/cubes.scss */
+/* line 224, input/cubes.scss */
 h1.stage_name {
   font-family: "Arvo", serif;
   font: 400;
   color: #50b9e0;
   text-align: center; }
 
-/* line 220, input/cubes.scss */
+/* line 231, input/cubes.scss */
 h2 {
-  line-height: 1.3em;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.1em; }
+  line-height: 1.1em;
+  font-family: "Oswald", sans-serif; }
   @media screen and (min-width: 601px) {
-    /* line 220, input/cubes.scss */
+    /* line 231, input/cubes.scss */
     h2 {
-      font-size: 1.1em; } }
+      font-size: 1.4em;
+      line-height: 1.2em;
+      position: relative;
+      bottom: 5 em; } }
   @media screen and (max-width: 600px) {
-    /* line 220, input/cubes.scss */
+    /* line 231, input/cubes.scss */
     h2 {
       float: left;
       display: block;

@@ -112,10 +112,12 @@ section {
 		
 		.band_box_basin_pick {
 			@include band_box_template;
-			background-image: url(/img/CountBasin.svg), -webkit-gradient(linear, left top, left bottom, from($green-color), to($green-color-darken));
+			@include linear-gradient($green-color,$green-color-darken);
+/*
 			background-repeat: no-repeat, repeat;
 			background-position: 95% 10%, 0 0;
 			background-size: 50px, auto;
+*/
 		}		
 		
 		.band_box_performer_pick {
@@ -139,8 +141,10 @@ section {
 		h1 {
 			font-size: 2em;
 			// 				text-align: center;
-			line-height: 1em;
+			line-height: 1.1em;
 			font-family: $primary-font;
+			position: relative;
+			bottom: .2em;
 			& .small{
 				font-size: 1em;
 			}
@@ -161,11 +165,18 @@ section {
 				text-decoration: none;
 				
 			& h1 {
-				font-size: 2em;
+				font-size: 3em;
 				// 				text-align: center;
 				line-height: 1em;
 				font-family: $primary-font;
+				position: relative;
+				bottom: .2em;
 				}
+			}
+			h3 {
+				line-height: .2em;
+				position: relative;
+				top: .2em;
 			}
 		}
 	
@@ -219,11 +230,13 @@ h1.stage_name{
 
 h2{
 	// 				text-align: center;
-	line-height: 1.3em;
+	line-height: 1.1em;
 	font-family: $primary-font;
-	font-size: 1.1em;
 		@include media($large-media) {
-		font-size: 1.1em;
+		font-size: 1.4em;
+		line-height: 1.2em;
+		position: relative;
+		bottom: 5 em;
 	}
     
 	@include media($small-media) {

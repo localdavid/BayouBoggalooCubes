@@ -1,5 +1,4 @@
 header {
-	height: 200px;
 	width: 100%;
 	text-align: center;
 	background: $primary-color;
@@ -7,20 +6,52 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: -1;
+	@include media($large-media) {
+		height: 200px;
+
+	}
+    
+	@include media($small-media) {
+				height: 100px;
+
+	}
 /*
-	background-image: url(img/crop_waves-01.svg);
-	background-size: 800px 200px;
+	background-image: url("blue-abstract.jpg");
+// 	background-size: 800px 200px;
 */
+
 // 	display: table-cell;
 	vertical-align: middle;
 	h1/* headline */{
-		margin-top: 30px;
-		text-align: center;
-		font-family: $headline-font;
-		font-size: 3em;		
-		color: #c16c0a
+		@include media($large-media) {
+			margin-top: 30px;
+			text-align: center;
+			font-family: $headline-font;
+			font-size: 4em;		
+			color: white;
+			letter-spacing: 2px;
+			text-shadow: 3px 3px 1px $primary-color-darken3;
+		}
+    
+		@include media($small-media) {
+			margin-top: 30px;
+			text-align: center;
+			font-family: $headline-font;
+			font-size: 2em;		
+			color: white;
+			letter-spacing: 2px;
+			text-shadow: 3px 3px 1px $primary-color-darken3;				
+		}
 	}
-		
+	
+	p {
+		font-size: .6em;
+		text-align: center;
+		line-height: .5em;
+		font-family: $secondary-font;
+		font-weight: 700;
+// 		text-transform: uppercase;
+	}	
 }
 
 /*

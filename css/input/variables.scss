@@ -1,6 +1,8 @@
 $primary-color: #7BCAE8;
 $primary-color-darken: darken($primary-color, 10%);
 $primary-color-darken2: darken($primary-color, 25%);
+$primary-color-darken3: darken($primary-color, 35%);
+
 
 $primary-color-lighten: lighten($primary-color, 15%);
 $secondary-color: #93ffd5;
@@ -22,15 +24,14 @@ $body-line-height: 5em;
 
 
 // Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700|Vast+Shadow);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald:700|Alfa+Slab+One);
 
 
 
 // Font Variables
 $primary-font: 'Oswald', sans-serif;
 $secondary-font: 'Arvo', serif;
-$headline-font: 'Vast Shadow', cursive;
-
+$headline-font: 'Alfa Slab One', cursive;
 
 // Breakpoints
 $small-media: new-breakpoint(max-width 600px);
