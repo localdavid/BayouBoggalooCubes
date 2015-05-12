@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$(document).ready(function() {
 		
 		// Define the open and close submenu functions
-	/*
+	
 				function openSubMenu() {
 				$(this).find('ul').css('visibility', 'visible');	
 			}
@@ -24,7 +24,7 @@ $(document).ready(function() {
 			function closeSubMenu() {
 				$(this).find('ul').css('visibility', 'hidden');	
 			}
-	*/
+	
 		
 		// when the mouse is moved over a li in myMenu, the function openSubMenu is called
 			$('.myMenu > li').on('mouseover', openSubMenu);
