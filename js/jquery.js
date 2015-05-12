@@ -27,7 +27,7 @@ $(document).ready(function() {
 	
 		
 		// when the mouse is moved over a li in myMenu, the function openSubMenu is called
-			$('.myMenu > li').on('mouseover', openSubMenu);
+			$('.myMenu > li').on('mouseover touchstart', openSubMenu);
 		//  We need to bind another event listener to detect when the mouse rolls out and call a function that gets rid of the dropdown.
 			$('.myMenu > li').on('mouseout', closeSubMenu);
 		
@@ -50,6 +50,7 @@ $(document).ready(function() {
 		    var i = $(this).index();
 		    $('.full_cube').hide();
 		    $('#day' + (i+1)).show();
+		    $('.myMenu > li').find('ul').css('visibility', 'hidden');
 		    
 		    // Shows filters when a day is clicked
 		    $('.filters').show();
