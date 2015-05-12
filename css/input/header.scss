@@ -1,19 +1,27 @@
 header {
-	width: 100%;
-	text-align: center;
-	background: $primary-color;
-	padding-top: 0;
-	position: fixed;
-	top: 0;
-	z-index: -1;
+
 	@include media($large-media) {
+		width: 100%;
+		text-align: center;
+		background: $primary-color;
+		padding-top: 0;
+		position: fixed;
+		top: 0;
+		z-index: -1;
 		height: 200px;
 
 	}
     
 	@include media($small-media) {
-				height: 100px;
-
+		width: 100%;
+		text-align: center;
+		background: $primary-color;
+		padding-top: 0;
+		position: fixed;
+		top: 0;
+		z-index: 200;
+		height: 100px;
+			
 	}
 /*
 	background-image: url("blue-abstract.jpg");

@@ -1,10 +1,21 @@
 section.navigation {
-	position: relative;
-	z-index: 300;
-	box-shadow: 0 4px 5px rgba(0,0,0, .3);
-	background-color: white;
+	@include media($large-media) {
+		position: relative;
+		z-index: 300;
+		box-shadow: 0 4px 5px rgba(0,0,0, .3);
+		background-color: white;
+	}
+    
+	@include media($small-media) {
+		position: fixed;
+		top: 90px;
+		width: 100%;
+		z-index: 300;
+		box-shadow: 0 4px 5px rgba(0,0,0, .3);
+		background-color: white;		
+	}
 }
-
+/*
 section.navigation_scrolled{
 	position: fixed;
 	width: 100%;
@@ -15,6 +26,7 @@ section.navigation_scrolled{
 	top: 0;
 
 }
+*/
 
 // Drop down menu to select weekend
 
