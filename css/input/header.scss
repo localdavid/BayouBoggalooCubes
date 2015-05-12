@@ -32,7 +32,7 @@ header {
 			max-width: 100px;
 		}
 		@include media($small-media) {
-			max-width: 100px;
+			max-width: 80px;
 		}
 		@include media($wide-media) {
 			max-width: 130px;
@@ -80,7 +80,7 @@ header {
 		font-weight: 400;
 // 		text-transform: uppercase;
 		@include media($small-media) {
-			font-size: 1.2em;
+			font-size: 1em;
 			line-height: .8em;
 			position: relative;
 			bottom: 5px;								

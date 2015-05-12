@@ -33,7 +33,7 @@ section.navigation_scrolled{
 // Drop down menu to select weekend
 
 	.date_select_div {
-	height: 100px;
+	height: 50px;
 	width: 100%;
 		@include media($small-media) {
 		height: 30px;
@@ -58,7 +58,7 @@ section.navigation_scrolled{
 		list-style:none;
 		float:left;
 		font:12px Arial, Helvetica, sans-serif #111;
-     a:link, a:visited {
+		& a:link, a:visited {
         display:block;
         text-decoration:none;
         background-color:$primary-color-darken;
