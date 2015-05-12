@@ -1,6 +1,13 @@
 /*jslint browser: true*/
 
 
+// Attach FastClick
+
+$(function() {
+    FastClick.attach(document.body);
+});
+
+
 // Hide filters on page load
 
 $(document).ready(function() {
