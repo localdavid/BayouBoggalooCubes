@@ -5,7 +5,7 @@ header {
 			background-position-x: -20px;
 			background-repeat: repeat;
 
-	@include media($large-media) {
+	@include media($breakpoint-2) {
 		width: 100%;
 		text-align: center;
 		padding-top: 0;
@@ -16,7 +16,7 @@ header {
 
 	}
     
-	@include media($small-media) {
+	@include media($breakpoint-1) {
 		width: 100%;
 		text-align: center;
 		padding-top: 0;
@@ -28,13 +28,13 @@ header {
 	}
 	img {
 		height: auto;		
-		@include media($large-media) {
+		@include media($breakpoint-2) {
 			max-width: 100px;
 		}
-		@include media($small-media) {
+		@include media($breakpoint-1) {
 			max-width: 80px;
 		}
-		@include media($wide-media) {
+		@include media($breakpoint-3) {
 			max-width: 130px;
 		}
 		
@@ -47,7 +47,7 @@ header {
 // 	display: table-cell;
 	vertical-align: middle;
 	h1/* headline */{
-		@include media($large-media) {
+		@include media($breakpoint-2) {
 			margin-top: 30px;
 			text-align: center;
 			font-family: $headline-font;
@@ -57,7 +57,7 @@ header {
 			text-shadow: 3px 3px 1px $primary-color-darken3;
 		}
     
-		@include media($small-media) {
+		@include media($breakpoint-1) {
 			margin-top: 10px;
 			text-align: center;
 			font-family: $headline-font;
@@ -67,7 +67,7 @@ header {
 			text-shadow: 3px 3px 1px $primary-color-darken3;				
 		}
 		
-		@include media($wide-media) {
+		@include media($breakpoint-3) {
 
 			font-size: 4em;		
 
@@ -79,24 +79,26 @@ header {
 		font-family: $secondary-font;
 		font-weight: 400;
 // 		text-transform: uppercase;
-		@include media($small-media) {
+		@include media($breakpoint-1) {
 			font-size: 1em;
 			line-height: .8em;
 			position: relative;
 			bottom: 5px;								
 		}
 
-		@include media($large-media) {
+		@include media($breakpoint-2) {
 		font-size: 1.2em;
 		line-height: .8em;
 // 		position: relative;
 // 		bottom: 3px;								
 		}		
-		@include media($wide-media) {
-		font-size: 1.6em;
-		line-height: 1em;
+		@include media($breakpoint-3) {
+		font-size: 1.4em;
+		line-height: .9em;
+/*
 		position: relative;
-		top: 3px;								
+		top: 3px;	
+*/							
 		}		
 	}	
 }

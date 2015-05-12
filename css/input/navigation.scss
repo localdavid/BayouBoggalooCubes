@@ -1,5 +1,5 @@
 section.navigation {
-	@include media($large-media) {
+	@include media($breakpoint-2) {
 		position: relative;
 		z-index: 300;
 		box-shadow: 0 4px 5px rgba(0,0,0, .3);
@@ -7,7 +7,7 @@ section.navigation {
 
 	}
     
-	@include media($small-media) {
+	@include media($breakpoint-1) {
 		position: fixed;
 		margin: 10px 0 0 0;
 		top: 90px;
@@ -35,7 +35,7 @@ section.navigation_scrolled{
 	.date_select_div {
 	height: 50px;
 	width: 100%;
-		@include media($small-media) {
+		@include media($breakpoint-1) {
 		height: 30px;
 		}
 }
@@ -66,11 +66,11 @@ section.navigation_scrolled{
         margin:0;
         border-right: 1px solid #fff;
         color:#111;
-        	@include media($small-media) {
+        	@include media($breakpoint-1) {
 	        	padding: 12px 0px 7px 10px;
 	        	font-size: 1em;
 			}
-		@include media($small-media) {
+		@include media($breakpoint-1) {
 			padding: 0.1em;					
 			}	
         }

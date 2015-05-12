@@ -4,12 +4,12 @@
 
     background: $column-color;
 
-	@include media($large-media) {
+	@include media($breakpoint-2) {
 		@include span-columns(4);
 		height: 800px;
 	}
     
-	@include media($small-media) {
+	@include media($breakpoint-1) {
 		@include span-columns(12);
 		height: 100%;			
 	}
@@ -18,12 +18,12 @@
 @mixin column-4 {
     background: $column-color;
 
-	@include media($large-media) {
+	@include media($breakpoint-2) {
 		@include span-columns(3);
 		height: 910px;		
 	}
     
-	@include media($small-media) {
+	@include media($breakpoint-1) {
 		@include span-columns(12);
 		height: 100%;			
 	}
@@ -45,7 +45,7 @@
 	display: table;
 	vertical-align: middle;
 	text-align: center;
-	@include media($small-media) {
+	@include media($breakpoint-1) {
 			height: 80px;				
 	}
 	
@@ -154,7 +154,7 @@ section {
 			& .small{
 				font-size: 1em;
 				}
-			@include media($small-media) {
+			@include media($breakpoint-1) {
 				font-size: 1.6em;				
 				}
 			}	
@@ -186,7 +186,7 @@ section {
 				line-height: .2em;
 				position: relative;
 				top: .2em;
-				@include media($small-media) {
+				@include media($breakpoint-1) {
 					top: .3em;						
 				}
 			}
@@ -244,14 +244,14 @@ h2{
 	// 				text-align: center;
 	line-height: 1.1em;
 	font-family: $primary-font;
-		@include media($large-media) {
+		@include media($breakpoint-2) {
 		font-size: 1.4em;
 		line-height: 1.2em;
 		position: relative;
 		bottom: 5 em;
 	}
     
-	@include media($small-media) {
+	@include media($breakpoint-1) {
 		@include span-columns(12);
 		height: 100%;
 		font-size: 1.6em;
