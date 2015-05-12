@@ -42,7 +42,7 @@ header {
 		}
     
 		@include media($small-media) {
-			margin-top: 30px;
+			margin-top: 10px;
 			text-align: center;
 			font-family: $headline-font;
 			font-size: 2em;		
@@ -59,6 +59,11 @@ header {
 		font-family: $secondary-font;
 		font-weight: 700;
 // 		text-transform: uppercase;
+		@include media($small-media) {
+			line-height: .2em;
+			position: relative;
+			bottom: 5px;					
+		}
 	}	
 }
 

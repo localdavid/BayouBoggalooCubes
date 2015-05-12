@@ -45,6 +45,10 @@
 	display: table;
 	vertical-align: middle;
 	text-align: center;
+	@include media($small-media) {
+			height: 80px;				
+	}
+	
 }
 
 
@@ -75,6 +79,8 @@ section {
 				vertical-align: middle;
 				text-align: center;
 			}	
+			    
+
 		}
 
 						
@@ -147,10 +153,13 @@ section {
 			bottom: .2em;
 			& .small{
 				font-size: 1em;
-			}
-				
-			}
+				}
+			@include media($small-media) {
+				font-size: 1.6em;				
+				}
+			}	
 		}
+		
 		.band_box_kids {
 			@include band_box_template;
 			@include linear-gradient($primary-color, $primary-color-darken );
@@ -177,6 +186,9 @@ section {
 				line-height: .2em;
 				position: relative;
 				top: .2em;
+				@include media($small-media) {
+					top: .3em;						
+				}
 			}
 		}
 	
@@ -242,10 +254,13 @@ h2{
 	@include media($small-media) {
 		@include span-columns(12);
 		height: 100%;
-		font-size: 2em;
+		font-size: 1.6em;
+		position: relative;
+		bottom: .2em;
 			
 	}
 }
+
 
 	
 

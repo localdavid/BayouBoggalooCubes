@@ -4,10 +4,12 @@ section.navigation {
 		z-index: 300;
 		box-shadow: 0 4px 5px rgba(0,0,0, .3);
 		background-color: white;
+
 	}
     
 	@include media($small-media) {
 		position: fixed;
+		margin: 10px 0 0 0;
 		top: 90px;
 		width: 100%;
 		z-index: 300;
@@ -33,6 +35,9 @@ section.navigation_scrolled{
 	.date_select_div {
 	height: 100px;
 	width: 100%;
+		@include media($small-media) {
+		height: 30px;
+		}
 }
 
 /* .myMenu is the class for the whole menu */
@@ -61,6 +66,13 @@ section.navigation_scrolled{
         margin:0;
         border-right: 1px solid #fff;
         color:#111;
+        	@include media($small-media) {
+	        	padding: 12px 0px 7px 10px;
+	        	font-size: 1em;
+			}
+		@include media($small-media) {
+			padding: 0.1em;					
+			}	
         }
 
     /* li ul is the container for the boxes that come out when the top box is expanded */
@@ -77,7 +89,7 @@ section.navigation_scrolled{
           a:link, .myMenu li ul li a:visited {
             background-color:$primary-color;
             width:auto;
-          }
+	          }
           }
         
       }
