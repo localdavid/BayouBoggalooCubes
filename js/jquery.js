@@ -21,11 +21,11 @@ $(window).resize(function() {
 
   if ($(this).width() < 600) {
 
-    $('.desc').hide();
+    $('.desc_div').hide();
 
   } else {
 
-    $('.desc').show();
+    $('.desc_div').show();
 
     }
 
