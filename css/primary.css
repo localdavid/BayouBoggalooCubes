@@ -125,11 +125,21 @@ h1.headline {
 body {
   background-color: white; }
 
-/* line 7, input/background.scss */
+/* line 5, input/background.scss */
+section.pic {
+  z-index: -300; }
+
+/* line 10, input/background.scss */
 .test {
-  width: 1000px;
-  height: 500px;
-  background-image: url("background_image.jpg"); }
+  width: 100%;
+  height: 1000px;
+  min-width: 400px;
+  min-height: 600px;
+  background-image: url("music1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -300;
+  position: fixed; }
 
 @media screen and (min-width: 601px) {
   /* line 1, input/navigation.scss */
@@ -611,7 +621,12 @@ h2 {
     font-size: 1.3em;
     color: black;
     margin: 0;
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
+    @media screen and (max-width: 600px) {
+      /* line 11, input/more.scss */
+      #more_box h1 {
+        padding: 3%; } }
 
 /* line 11, input/primary.scss */
 body {

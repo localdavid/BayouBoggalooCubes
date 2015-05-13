@@ -15,7 +15,15 @@
 		color: black;
 		margin: 0;
 		text-align: center;
+		padding: 10px;
+		
+		@include media($breakpoint-1) {
+				padding: 3%;					
+		}
+		
+
+		
+		
 // 	padding: 10px 0px 00px 0px;	
 	}
 }
-
