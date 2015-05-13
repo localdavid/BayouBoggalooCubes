@@ -105,9 +105,26 @@ $(window).resize(function() {
 		});
 	});
 	
+// Show/hide more info box
+
+
+
+	// Hides links on page load
+	$(document).ready(function() {
+    	$("#more_box_add").hide();
+	});
+	
 
 	
+
+	
+	$(document).ready(function() {
+		$("#more_box").click(function() {
+			$("#more_box_add").fadeToggle(200);
+		});
+	});
 				
+
 
 	
 	
