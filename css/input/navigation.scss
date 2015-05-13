@@ -1,9 +1,11 @@
 section.navigation {
+			z-index: 400;
+
 	@include media($breakpoint-2) {
 		position: relative;
-		z-index: 300;
-		box-shadow: 0 4px 5px rgba(0,0,0, .3);
 		background-color: white;
+		box-shadow: 0 4px 5px rgba(0,0,0, .3);
+
 
 	}
     
@@ -12,7 +14,6 @@ section.navigation {
 		margin: 10px 0 0 0;
 		top: 90px;
 		width: 100%;
-		z-index: 300;
 		box-shadow: 0 4px 5px rgba(0,0,0, .3);
 		background-color: white;		
 	}

@@ -39,6 +39,9 @@ header {
 		}
 		
 	}
+	
+
+	
 /*
 	background-image: url("blue-abstract.jpg");
 // 	background-size: 800px 200px;
@@ -123,3 +126,8 @@ h1.headline {
 
 }
 */
+.desc_div {
+	@include media($breakpoint-1) {
+	display: none;
+	}
+}

@@ -17,6 +17,7 @@ $(document).ready(function() {
 
 // Hide description at small size
 
+/*
 $(window).resize(function() {
 
   if ($(this).width() < 610) {
@@ -30,6 +31,7 @@ $(window).resize(function() {
     }
 
 });
+*/
 
 
 // Weekend select drop down menu (from: http://www.webchief.co.uk/blog/simple-jquery-dropdown-menu/)
