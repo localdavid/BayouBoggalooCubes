@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 
-  if ($(this).width() < 600) {
+  if ($(this).width() < 610) {
 
     $('.desc_div').hide();
 

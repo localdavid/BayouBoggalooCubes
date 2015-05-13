@@ -142,7 +142,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/input\/primary.scss",
-		"outputAbbreviatedPath": "\/css\/css\/primary.css",
+		"outputAbbreviatedPath": "\/css\/primary.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
@@ -286,7 +286,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "Bayou Boogaloo Cubes",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "harddrive_orange"
 	},
 "projectSettings": {
