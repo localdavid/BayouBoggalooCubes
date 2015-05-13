@@ -125,6 +125,14 @@ h1.headline {
 body {
   background-color: white; }
 
+/* line 5, input/background.scss */
+.pic_div {
+  width: 1000px;
+  height: 500px;
+  background-image: url("boogaloopic1-sized.jpg");
+  position: fixed;
+  z-index: -300; }
+
 @media screen and (min-width: 601px) {
   /* line 1, input/navigation.scss */
   section.navigation {
