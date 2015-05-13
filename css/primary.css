@@ -53,16 +53,6 @@ header {
       /* line 29, input/header.scss */
       header img {
         max-width: 130px; } }
-  @media screen and (min-width: 601px) {
-    /* line 49, input/header.scss */
-    header h1 {
-      margin-top: 30px;
-      text-align: center;
-      font-family: "Alfa Slab One", cursive;
-      font-size: 3em;
-      color: white;
-      letter-spacing: 2px;
-      text-shadow: 3px 3px 1px #1a7496; } }
   @media screen and (max-width: 600px) {
     /* line 49, input/header.scss */
     header h1 {
@@ -73,35 +63,51 @@ header {
       color: white;
       letter-spacing: 2px;
       text-shadow: 3px 3px 1px #1a7496; } }
+  @media screen and (min-width: 601px) {
+    /* line 49, input/header.scss */
+    header h1 {
+      text-align: center;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 3em;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 1px #1a7496; } }
   @media screen and (min-width: 950px) {
     /* line 49, input/header.scss */
     header h1 {
-      font-size: 4em; } }
-  /* line 78, input/header.scss */
+      text-align: center;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 3.8em;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 1px #1a7496; } }
+  /* line 85, input/header.scss */
   header p {
     font-family: "Arvo", serif;
     font-weight: 400; }
     @media screen and (max-width: 600px) {
-      /* line 78, input/header.scss */
+      /* line 85, input/header.scss */
       header p {
         font-size: 1em;
         line-height: .8em;
         position: relative;
         bottom: 5px; } }
     @media screen and (min-width: 601px) {
-      /* line 78, input/header.scss */
+      /* line 85, input/header.scss */
       header p {
-        font-size: 1.2em;
-        line-height: .8em; } }
-    @media screen and (min-width: 950px) {
-      /* line 78, input/header.scss */
-      header p {
-        font-size: 1.4em;
-        line-height: .9em;
+        font-size: 1.0em;
+        line-height: .8em;
         /*
         		position: relative;
-        		top: 3px;	
+        		bottom: 3px;								
         */ } }
+    @media screen and (min-width: 601px) {
+      /* line 85, input/header.scss */
+      header p {
+        font-size: 1.4em;
+        line-height: .8em;
+        position: relative;
+        top: 2px; } }
 
 /*
 }

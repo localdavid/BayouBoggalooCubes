@@ -47,15 +47,7 @@ header {
 // 	display: table-cell;
 	vertical-align: middle;
 	h1/* headline */{
-		@include media($breakpoint-2) {
-			margin-top: 30px;
-			text-align: center;
-			font-family: $headline-font;
-			font-size: 3em;		
-			color: white;
-			letter-spacing: 2px;
-			text-shadow: 3px 3px 1px $primary-color-darken3;
-		}
+
     
 		@include media($breakpoint-1) {
 			margin-top: 10px;
@@ -67,12 +59,27 @@ header {
 			text-shadow: 3px 3px 1px $primary-color-darken3;				
 		}
 		
-		@include media($breakpoint-3) {
-
-			font-size: 4em;		
-
+				@include media($breakpoint-2) {
+// 			margin-top: 15px;
+			text-align: center;
+			font-family: $headline-font;
+			font-size: 3em;		
+			color: white;
+			letter-spacing: 2px;
+			text-shadow: 3px 3px 1px $primary-color-darken3;
+		}
+			@include media($breakpoint-3) {
+// 			margin-top: 30px;
+			text-align: center;
+			font-family: $headline-font;
+			font-size: 3.8em;		
+			color: white;
+			letter-spacing: 2px;
+			text-shadow: 3px 3px 1px $primary-color-darken3;
 		}
 		
+		
+
 	}
 	
 	p {
@@ -87,19 +94,20 @@ header {
 		}
 
 		@include media($breakpoint-2) {
-		font-size: 1.2em;
+		font-size: 1.0em;
 		line-height: .8em;
-// 		position: relative;
-// 		bottom: 3px;								
-		}		
-		@include media($breakpoint-3) {
-		font-size: 1.4em;
-		line-height: .9em;
 /*
 		position: relative;
-		top: 3px;	
-*/							
+		bottom: 3px;								
+*/
+		}	
+		@include media($breakpoint-2) {
+		font-size: 1.4em;
+		line-height: .8em;
+		position: relative;
+		top: 2px;								
 		}		
+	
 	}	
 }
 
